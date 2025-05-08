@@ -1,2 +1,28 @@
-.vs/
+# Игнорируем файлы сборки и бинарные файлы
+x64/
+x86/
 Debug/
+Release/
+*.exe
+*.dll
+*.ilk
+*.pdb
+*.obj
+*.lib
+*.exp
+*.sln
+*.vcxproj*
+*.filters
+*.user
+*.aps
+
+# Игнорируем файлы IDE и временные файлы
+.vs/
+.idea/
+*.suo
+*.sdf
+*.opensdf
+*.log
+*.tlog
+__pycache__/
+
