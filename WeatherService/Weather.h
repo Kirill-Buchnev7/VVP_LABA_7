@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include "json.hpp"
+#include <clocale>
 using namespace std;
 class Weather
 {

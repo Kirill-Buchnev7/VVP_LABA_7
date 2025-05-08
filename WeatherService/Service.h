@@ -2,6 +2,7 @@
 #include "Weather.h"
 #include <fstream>
 #include "json.hpp"
+#include <clocale>
 
 using nlohmann::json;
 class Service

@@ -2,10 +2,15 @@
 //
 
 #include <iostream>
+#include "Weather.h"
+#include "Service.h"
+#include "clocale"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    setlocale(LC_ALL, "ru");
+    JsonService js;
+    Weather w = js.getWeather("weather.json");
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
