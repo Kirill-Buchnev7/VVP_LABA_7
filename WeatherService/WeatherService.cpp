@@ -4,9 +4,11 @@
 #include <iostream>
 #include "Weather.h"
 #include "XmlService.h"
+#include <clocale>
 
 int main()
 {
+    setlocale(LC_ALL, "rus");
     XmlService xs;
     Weather w = xs.getWeather("weather.xml");
 }
