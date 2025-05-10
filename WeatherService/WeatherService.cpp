@@ -6,6 +6,7 @@
 #include "Service.h"
 #include "clocale"
 #include "XmlService.h"
+#include "JsonService.h"
 
 int main() {
     // Способ 1: JSON
