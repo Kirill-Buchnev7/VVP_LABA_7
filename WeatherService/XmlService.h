@@ -1,12 +1,11 @@
 #pragma once
-#include "Weather.h"
-#include "Service.h"
-#include "pugixml-1.13/src/pugixml.hpp"
-using namespace std;
-class XmlService : public Service
-{
+#include <iostream>
+#include <string>
+#include "pugixml-1.15/src/pugixml.hpp"  
+#include "Weather.h"    
+#include "Service.h" 
+class XmlService : public Service {
 public:
-	virtual Weather getWeather(string s) override;
-	virtual ~XmlService() {};
+    virtual Weather getWeather(string s) override;
+    virtual ~XmlService() {};
 };
-
