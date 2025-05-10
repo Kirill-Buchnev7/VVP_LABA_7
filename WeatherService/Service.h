@@ -1,10 +1,13 @@
 #pragma once
 #include "Weather.h"
+<<<<<<< HEAD
 #include <fstream>
 #include "json.hpp"
 #include <clocale>
 
 using nlohmann::json;
+=======
+>>>>>>> feature-xml
 class Service
 {
 public:

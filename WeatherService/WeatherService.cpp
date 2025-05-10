@@ -5,12 +5,17 @@
 #include "Weather.h"
 #include "Service.h"
 #include "clocale"
+#include "XmlService.h"
 
-int main()
-{
-    setlocale(LC_ALL, "ru");
+int main() {
+    // Способ 1: JSON
     JsonService js;
-    Weather w = js.getWeather("weather.json");
+    Weather wJson = js.getWeather("weather.json");
+
+    // Способ 2: XML
+    XmlService xs;
+    Weather wXml = xs.getWeather("weather.xml");
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
